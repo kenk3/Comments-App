@@ -10,6 +10,10 @@
   
 </p>
 
+<div class = 'comments'>
+
+</div>
+
 <form method="post" action="">
 user: <input type="text" name="user" /><br />
 mail: <input type="text" name="mail" /><br />
