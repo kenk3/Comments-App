@@ -1,6 +1,6 @@
 <?php
 
-$q = mysql_query('Select * from comments');
+$q = mysql_query('Select * from comments order by date desc');
 print '<div class = "comments">';
 if (!empty($q)) {
   while ($comment = mysql_fetch_array($q)) {
