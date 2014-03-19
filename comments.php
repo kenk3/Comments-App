@@ -5,13 +5,13 @@ print '<div class = "comments">';
 if (!empty($q)) {
   while ($comment = mysql_fetch_array($q)) {
     
-    print $comment['name'];
+    print htmlspecialchars($comment['name']);
     print '<br/>';
-    print $comment['mail'];
+    print htmlspecialchars($comment['mail']);
     print '<br/>';
-    print $comment['text'];
+    print htmlspecialchars($comment['text']);
     print '<br/>';
-    print $comment['date'];
+    print htmlspecialchars($comment['date']);
     print '<hr/>';
   }
 }
